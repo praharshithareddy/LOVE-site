@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Love Coupons 💖</title>
+
+<style>
+body{
+ margin:0;
+ text-align:center;
+ font-family:Comic Sans MS;
+ background:#eec6cc;
+ padding-top:50px;
+}
+
+h1{
+ color:#b24b6b;
+ font-size:40px;
+ margin-bottom:5px;
+}
+
+p{
+ color:#b24b6b;
+ margin-bottom:40px;
+}
+
+/* grid */
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,250px);
+ gap:30px;
+ justify-content:center;
+}
+
+/* coupon cards */
+.card{
+ background:white;
+ padding:20px;
+ border-radius:20px;
+ border:2px dashed #ffc0cb;
+ box-shadow:0 0 15px rgba(255,0,100,0.2);
+ font-size:18px;
+ color:#b24b6b;
+ transition:.3s;
+}
+
+.card:hover{
+ transform:scale(1.05);
+}
+
+.icon{
+ font-size:30px;
+}
+
+/* return button */
+button{
+ margin-top:50px;
+ padding:15px 40px;
+ font-size:18px;
+ border:none;
+ border-radius:30px;
+ background:#ff6fa5;
+ color:white;
+ cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Love Coupons</h1>
+<p>Just for you 💕</p>
+
+<div class="grid">
+
+<div class="card" onclick="redeem(this)">
+<div class="icon">🍿</div>
+Movie night of your choice<br>
+<small>Redeem anytime</small>
+</div>
+
+<div class="card" onclick="redeem(this)">
+<div class="icon">🌙</div>
+One deep late-night<br>
+<small>Just us, no distractions</small>
+</div>
+
+<div class="card" onclick="redeem(this)">
+<div class="icon">🍰</div>
+Dessert on me<br>
+<small>Sweet, just like you</small>
+</div>
+
+<div class="card" onclick="redeem(this)">
+<div class="icon">🤗</div>
+Unlimited hugs<br>
+<small>No expiration</small>
+</div>
+
+</div>
+
+<button onclick="goBack()">Return 💌</button>
+
+<script>
+function goBack(){
+ window.history.back();
+}
+</script>
+<script>
+function redeem(card){
+ card.style.background="#ffd1dc";
+ card.innerHTML="Waiting to see u ❤️";
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Memories 💕</title>
+
+<style>
+body{
+ text-align:center;
+ font-family:Comic Sans MS;
+ background:#ffd6e0;
+ margin:0;
+ padding:40px;
+}
+
+h1{
+ color:#c2185b;
+}
+
+.gallery{
+ display:flex;
+ justify-content:center;
+ gap:25px;
+ flex-wrap:wrap;
+ margin-top:40px;
+}
+
+.pic{
+ background:white;
+ padding:10px;
+ border-radius:20px;
+ box-shadow:0 0 15px pink;
+ transform:rotate(-5deg);
+}
+
+.pic:nth-child(2){
+ transform:rotate(6deg);
+}
+
+.pic:nth-child(3){
+ transform:rotate(-3deg);
+}
+
+.pic:nth-child(4){
+ transform:rotate(5deg);
+}
+
+.pic img{
+ width:180px;
+ border-radius:15px;
+}
+
+button{
+ margin-top:50px;
+ padding:15px 40px;
+ font-size:18px;
+ border:none;
+ border-radius:30px;
+ background:#ff4d88;
+ color:white;
+ cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="gallery">
+
+<div class="pic">
+<img src="photo.jpg.jpeg">
+</div>
+
+<div class="pic">
+<img src="photo2.jpeg">
+</div>
+
+<div class="pic">
+<img src="photo3.jpg.jpeg">
+</div>
+
+<div class="pic">
+<img src="photo4.jpg.jpeg">
+</div>
+
+<div class="pic">
+<img src="photo5.jpg.jpeg">
+</div>
+</div>
+<br><br>
+<h1>Moments I’ll always hold close 💖</h1>
+
+<button onclick="goBack()">Return 💌</button>
+
+<script>
+function goBack(){
+ window.location.href="yes.html";
+}
+</script>
+
+</body>
+</html>

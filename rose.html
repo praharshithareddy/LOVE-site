@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Roses 🌹</title>
+
+<style>
+body{
+ margin:0;
+ font-family:Comic Sans MS;
+ background:#ffd6e0;
+ text-align:center;
+ color:#c2185b;
+}
+
+h1{
+ margin-top:30px;
+ font-size:40px;
+}
+
+/* layout */
+.container{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:40px;
+ margin-top:40px;
+ flex-wrap:wrap;
+}
+
+.column{
+ display:flex;
+ flex-direction:column;
+ gap:25px;
+}
+
+.msg{
+ background:white;
+ padding:15px 20px;
+ border-radius:20px;
+ box-shadow:0 0 15px pink;
+ width:200px;
+}
+
+/* rose image */
+.center img{
+ width:260px;
+}
+
+/* button */
+button{
+ margin:50px;
+ padding:15px 40px;
+ font-size:18px;
+ border:none;
+ border-radius:30px;
+ background:#ff4d88;
+ color:white;
+ cursor:pointer;
+ transition:0.3s;
+}
+
+button:hover{
+ transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<h1>YOUR ROSE BOUQUET 🌹</h1>
+
+<div class="container">
+
+<!-- LEFT SIDE -->
+<div class="column">
+<div class="msg">You are my favorite place ❤️</div>
+<div class="msg">I will always love you 💖</div>
+<div class="msg">Every moment with you is special 💞</div>
+</div>
+
+<!-- CENTER ROSE -->
+<div class="center">
+<img src="roses.jpg.webp">
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="column">
+<div class="msg">You are my today & all my tomorrows 💕</div>
+<div class="msg">With you everything feels right 💗</div>
+<div class="msg">You're my favorite person always 💘</div>
+</div>
+
+</div>
+
+<button onclick="goBack()">Return 💌</button>
+
+<script>
+function goBack(){
+ window.location.href="yes.html";
+}
+</script>
+
+</body>
+</html>

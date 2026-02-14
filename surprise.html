@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Surprise 💖</title>
+
+<style>
+body{
+ text-align:center;
+ font-family:Comic Sans MS;
+ background:#ffd6e7;
+ padding-top:60px;
+}
+
+h1{
+ color:#c2185b;
+}
+
+p{
+ color:#d63384;
+ font-size:18px;
+}
+
+input{
+ padding:15px;
+ font-size:18px;
+ border-radius:15px;
+ border:none;
+ outline:none;
+ text-align:center;
+ margin-top:20px;
+}
+
+button{
+ display:block;
+ margin:25px auto;
+ padding:15px 40px;
+ font-size:18px;
+ border:none;
+ border-radius:30px;
+ background:#ff69b4;
+ color:white;
+ cursor:pointer;
+ transition:.3s;
+}
+
+button:hover{
+ transform:scale(1.1);
+}
+
+#secret{
+ display:none;
+ margin-top:40px;
+ font-size:24px;
+ color:#c2185b;
+ animation:pop .5s;
+}
+
+@keyframes pop{
+ from{transform:scale(0);}
+ to{transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<h1>One last surprise... 💖</h1>
+<p>Only your name can open this surprise ✨</p>
+
+<input id="name" placeholder="Enter your name">
+
+<button onclick="unlock()">UNLOCK 💌</button>
+
+<div id="secret">
+🎉 Surprise!!! 🎉 <br><br>
+You are the best thing that ever happened to me 💕<br>
+I love you forever ❤️
+</div>
+
+<script>
+function unlock(){
+ let name=document.getElementById("name").value.toLowerCase();
+
+ if(name=="harsha"){   // change name here
+   window.location.href="coupons.html";
+ }
+ else{
+   alert("Only my special person can unlock this 😜");
+ }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<style>
+body{
+ text-align:center;
+ font-family:'Comic Sans MS';
+ background:#ffd6e0;
+ overflow:hidden;
+}
+
+h1{
+ margin-top:100px;
+ color:#c2185b;
+ font-size:50px;
+}
+
+button{
+ padding:15px 35px;
+ font-size:18px;
+ border:none;
+ border-radius:30px;
+ margin:20px;
+ cursor:pointer;
+ transition:0.3s;
+}
+
+#yes{
+ background:#ff4d88;
+ color:white;
+}
+
+#no{
+ background:#ffc0cb;
+}
+
+button:hover{
+ transform:scale(1.2);
+}
+
+/* floating hearts */
+.heart{
+ position:absolute;
+ color:#ff4d88;
+ font-size:20px;
+ animation:fall 5s linear infinite;
+}
+@keyframes fall{
+ from{transform:translateY(-10vh);}
+ to{transform:translateY(100vh);}
+}
+</style>
+</head>
+
+<body>
+<h1>HEYY HARSHA</h1>
+<h1>Will you be my Valentine? 💖</h1>
+
+
+<button onclick="openYes()">YES Please😍</button>
+<button onclick="openNo()">NO Thanks 😜</button>
+
+
+
+<script>
+function yesClick(){
+ alert("Yayyyy 😍 I knew it 💖");
+}
+
+/* moving NO button */
+function moveNo(){
+ let btn=document.getElementById("no");
+ btn.style.position="absolute";
+ btn.style.left=Math.random()*80+"vw";
+ btn.style.top=Math.random()*80+"vh";
+}
+
+/* floating hearts */
+setInterval(()=>{
+ let heart=document.createElement("div");
+ heart.className="heart";
+ heart.innerHTML="💖";
+ heart.style.left=Math.random()*100+"vw";
+ heart.style.fontSize=(Math.random()*20+15)+"px";
+ document.body.appendChild(heart);
+ setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+<script>
+function openNo(){
+ window.location.href="no.html";
+}
+</script>
+<script>
+function goBack(){
+ window.location.href="valentine.html";
+}
+</script>
+
+<script>
+function openYes(){
+ window.location.href="yes.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You 💖</title>
+
+<style>
+body{
+ text-align:center;
+ font-family:Comic Sans MS;
+ background:#f9d6dc;
+ padding-top:50px;
+}
+
+h1{
+ color:#c2185b;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,150px);
+ gap:30px;
+ justify-content:center;
+ margin-top:40px;
+}
+
+.card{
+ background:#ffdbe3;
+ border-radius:20px;
+ padding:30px;
+ font-size:50px;
+ cursor:pointer;
+ transition:0.3s;
+ box-shadow:0 0 15px pink;
+}
+
+.card:hover{
+ transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<h1>I made these just for you 💝</h1>
+<p>Tap a card to open your surprise ✨</p>
+
+<div class="grid">
+
+<div class="card" onclick="openMemories()">📷</div>
+<div class="card" onclick="openLetter()">💌</div>
+
+<div class="card" onclick="openSurprise()">🎀</div>
+
+
+
+<div class="card" onclick="openRose()">💐</div>
+
+</div>
+<script>
+function openRose(){
+ window.location.href="rose.html";
+}
+</script>
+<script>
+function openLetter(){
+ window.location.href="letter.html";
+}
+</script>
+<script>
+function openMemories(){
+ window.location.href="memories.html";
+}
+</script>
+
+
+<script>
+function openSurprise(){
+ window.location.href="surprise.html";
+}
+</script>
+
+</body>
+</html>
